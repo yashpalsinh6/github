@@ -29,6 +29,7 @@ jobs:
     - name: Run Python script
       run: |
         echo "import requests
+        text="hello"
         def send_msg(text):
           print(text)
           requests.get(url)
