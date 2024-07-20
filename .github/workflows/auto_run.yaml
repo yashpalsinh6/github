@@ -29,12 +29,12 @@ jobs:
     - name: Run Python script
       run: |
         echo "import requests
-        text="hello"
+        text='hello'
         def send_msg(text):
           print(text)
           requests.get(url)
 
-          text = 'hello'  # Replace with your actual message
+          text='hello'  # Replace with your actual message
           url = 'https://api.telegram.org/bot5590815712:AAFSTUE5XCtH6P77dtUd2IHeTyvBXiRL40E/sendMessage?chat_id=-1002097696580&text={}'.format(text)
         send_msg(text)" > script.py
         python script.py
