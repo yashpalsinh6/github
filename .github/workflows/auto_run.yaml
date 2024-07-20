@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-scripts:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
     # Checkout the repository to the GitHub runner
