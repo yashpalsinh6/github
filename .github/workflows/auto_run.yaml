@@ -12,4 +12,4 @@ jobs:
     # Run existing Python script
     - name: Run Python script
       run: |
-        python /path/to/your/script.py "hello, yashpal"
+        python3 /script.py "hello, yashpal"
