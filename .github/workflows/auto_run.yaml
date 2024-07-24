@@ -9,32 +9,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    # Checkout the repository to the GitHub runner
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    # Set up Python environment
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x' # Specify the Python version you need
-
-    # Install dependencies
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests
-
-    # Run Python script inline
+    # Run existing Python script
     - name: Run Python script
       run: |
-        echo "import requests
-        text='hello'
-        def send_msg(text):
-          print(text)
-          requests.get(url)
-
-          text='hello'  # Replace with your actual message
-          url = 'https://api.telegram.org/bot5590815712:AAFSTUE5XCtH6P77dtUd2IHeTyvBXiRL40E/sendMessage?chat_id=-1002097696580&text={}'.format(text)
-        send_msg(text)" > script.py
-        python script.py
+        python /path/to/your/script.py "hello, yashpal"
