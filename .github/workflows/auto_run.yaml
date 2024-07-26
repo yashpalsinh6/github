@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-scripts:
-    runs-on: macOS
+    runs-on: Linux
 
     steps:
     # Run existing Python script
