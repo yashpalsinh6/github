@@ -6,10 +6,10 @@ on:
 
 jobs:
   run-scripts:
-    runs-on: self-hosted
+    runs-on: macOS
 
     steps:
     # Run existing Python script
     - name: Run Python script
       run: |
-        python3 /home/azureuser/script.py "hello, yashpal"
+        python3 /Users/yashpal/Desktop/script.py "hello, yashpal"
