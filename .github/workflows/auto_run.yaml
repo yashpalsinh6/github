@@ -12,4 +12,4 @@ jobs:
     # Run existing Python script
     - name: Run Python script
       run: |
-        python3 /home/azureuser/script.py "hello, yashpal"
+        python3 /home/ubuntu/script.py "hello, yashpal"
