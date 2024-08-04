@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-scripts:
-    runs-on: Linux
+    runs-on: self-hosted
 
     steps:
     # Run existing Python script
